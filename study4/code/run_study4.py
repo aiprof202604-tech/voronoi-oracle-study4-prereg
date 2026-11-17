@@ -1,4 +1,4 @@
-"""Study 4 runner (SAP v4). Steps: (1) exact references and Shapely cells for all candidate inputs;
+"""Study 4 runner (SAP v4; evaluation exceptions handled as in deviation D-34). Steps: (1) exact references and Shapely cells for all candidate inputs;
 (2) the unmutated subject on all inputs, which selects the valid base inputs (rule in SAP v4);
 (3) every first-order mutant on all runs of the valid base inputs.
 Resumable (JSONL appends, done keys skipped), parallel (2 workers), progress printed."""
@@ -43,13 +43,28 @@ def eval_family(fn, bid):
         ref, sh = load_ref(key(bid, mr))
         rec = {"status": st}
         if st == "OK":
-            polys = to_polys(cells)
-            r = vc.compare_to_reference(P, polys, ref, bx)
-            rec.update({"missing": r["missing"], "misassign": r["misassign"], "worst": r["worst"]})
-            rec["ref_fail"] = bool(r["missing"] or r["misassign"] or r["worst"] > TAU)
-            rec["def"] = def_checks(P, polys, bx)
+            # D-34: an exception while EVALUATING a completed run marks that step "not evaluable"
+            # and counts as a failure/detection (favours the oracle-free tests).
+            rec["evalerr"] = []
+            try:
+                polys = to_polys(cells)
+            except Exception:
+                polys = [None] * len(P); rec["evalerr"].append("to_polys")
+            try:
+                r = vc.compare_to_reference(P, polys, ref, bx)
+                rec.update({"missing": r["missing"], "misassign": r["misassign"], "worst": r["worst"]})
+                rec["ref_fail"] = bool(r["missing"] or r["misassign"] or r["worst"] > TAU)
+            except Exception:
+                rec.update({"missing": 0, "misassign": 0, "worst": float("inf"), "ref_fail": True}); rec["evalerr"].append("ref")
+            try:
+                rec["def"] = def_checks(P, polys, bx)
+            except Exception:
+                rec["def"] = {"P1": None, "P2": None, "P3": None, "flag": True}; rec["evalerr"].append("def")
             pairs = [(i, i) for i in range(len(P))]
-            rec["diff"] = vc.cells_distance(polys, sh, bx, pairs)
+            try:
+                rec["diff"] = vc.cells_distance(polys, sh, bx, pairs)
+            except Exception:
+                rec["diff"] = float("inf"); rec["evalerr"].append("diff")
             cells_by[mr] = (polys, back, perm, P)
         out["runs"][mr] = rec
     if "base" in cells_by:
@@ -58,9 +73,15 @@ def eval_family(fn, bid):
             if mr not in cells_by:
                 out["mr"][mr] = None; continue
             B, back, perm, Q = cells_by[mr]
-            Bb = [None if g is None else back(g) for g in B]
+            try:
+                Bb = [None if g is None else back(g) for g in B]
+            except Exception:
+                out["mr"][mr] = float("inf"); out.setdefault("mr_evalerr", []).append(mr); continue
             pairs = [(i, i) for i in range(len(P0))] if perm is None else [(int(perm[k]), k) for k in range(len(Q))]
-            out["mr"][mr] = vc.cells_distance(A, Bb, bx0, pairs)
+            try:
+                out["mr"][mr] = vc.cells_distance(A, Bb, bx0, pairs)
+            except Exception:
+                out["mr"][mr] = float("inf"); out.setdefault("mr_evalerr", []).append(mr)
     return out
 
 
