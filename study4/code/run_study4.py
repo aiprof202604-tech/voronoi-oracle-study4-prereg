@@ -1,8 +1,8 @@
-"""Study 4 runner (SAP v4; evaluation exceptions handled as in deviation D-34). Steps: (1) exact references and Shapely cells for all candidate inputs;
+"""Study 4 runner (SAP v4; evaluation exceptions and time limits handled as in deviations D-34 and D-35). Steps: (1) exact references and Shapely cells for all candidate inputs;
 (2) the unmutated subject on all inputs, which selects the valid base inputs (rule in SAP v4);
 (3) every first-order mutant on all runs of the valid base inputs.
 Resumable (JSONL appends, done keys skipped), parallel (2 workers), progress printed."""
-import json, os, sys, pickle, time, types
+import json, os, sys, pickle, time, types, signal
 from multiprocessing import Pool
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from s4_common import *
@@ -10,6 +10,18 @@ import s4_common as C
 import hp_voronoi as H
 import mutate as MU
 REFD = os.path.join(RES, "ref"); os.makedirs(REFD, exist_ok=True)
+
+
+EVAL_TIMEOUT_S = 60   # D-35
+
+
+def _timed(fn, *args):
+    """Run an evaluation step with a 60 s limit (D-35); raises on timeout or error."""
+    signal.signal(signal.SIGALRM, C._alarm); signal.alarm(EVAL_TIMEOUT_S)
+    try:
+        return fn(*args)
+    finally:
+        signal.alarm(0)
 
 
 def key(bid, mr): return f"{bid}|{mr}"
@@ -47,23 +59,23 @@ def eval_family(fn, bid):
             # and counts as a failure/detection (favours the oracle-free tests).
             rec["evalerr"] = []
             try:
-                polys = to_polys(cells)
-            except Exception:
+                polys = _timed(to_polys, cells)
+            except BaseException:
                 polys = [None] * len(P); rec["evalerr"].append("to_polys")
             try:
-                r = vc.compare_to_reference(P, polys, ref, bx)
+                r = _timed(vc.compare_to_reference, P, polys, ref, bx)
                 rec.update({"missing": r["missing"], "misassign": r["misassign"], "worst": r["worst"]})
                 rec["ref_fail"] = bool(r["missing"] or r["misassign"] or r["worst"] > TAU)
-            except Exception:
+            except BaseException:
                 rec.update({"missing": 0, "misassign": 0, "worst": float("inf"), "ref_fail": True}); rec["evalerr"].append("ref")
             try:
-                rec["def"] = def_checks(P, polys, bx)
-            except Exception:
+                rec["def"] = _timed(def_checks, P, polys, bx)
+            except BaseException:
                 rec["def"] = {"P1": None, "P2": None, "P3": None, "flag": True}; rec["evalerr"].append("def")
             pairs = [(i, i) for i in range(len(P))]
             try:
-                rec["diff"] = vc.cells_distance(polys, sh, bx, pairs)
-            except Exception:
+                rec["diff"] = _timed(vc.cells_distance, polys, sh, bx, pairs)
+            except BaseException:
                 rec["diff"] = float("inf"); rec["evalerr"].append("diff")
             cells_by[mr] = (polys, back, perm, P)
         out["runs"][mr] = rec
@@ -74,13 +86,13 @@ def eval_family(fn, bid):
                 out["mr"][mr] = None; continue
             B, back, perm, Q = cells_by[mr]
             try:
-                Bb = [None if g is None else back(g) for g in B]
-            except Exception:
+                Bb = _timed(lambda: [None if g is None else back(g) for g in B])
+            except BaseException:
                 out["mr"][mr] = float("inf"); out.setdefault("mr_evalerr", []).append(mr); continue
             pairs = [(i, i) for i in range(len(P0))] if perm is None else [(int(perm[k]), k) for k in range(len(Q))]
             try:
-                out["mr"][mr] = vc.cells_distance(A, Bb, bx0, pairs)
-            except Exception:
+                out["mr"][mr] = _timed(vc.cells_distance, A, Bb, bx0, pairs)
+            except BaseException:
                 out["mr"][mr] = float("inf"); out.setdefault("mr_evalerr", []).append(mr)
     return out
 
