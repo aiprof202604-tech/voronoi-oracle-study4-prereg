@@ -1,4 +1,4 @@
-"""Study 4 runner (SAP v4; evaluation exceptions and time limits handled as in deviations D-34 and D-35). Steps: (1) exact references and Shapely cells for all candidate inputs;
+"""Study 4 runner (SAP v4; evaluation exceptions and time limits handled as in deviations D-34 to D-36). Steps: (1) exact references and Shapely cells for all candidate inputs;
 (2) the unmutated subject on all inputs, which selects the valid base inputs (rule in SAP v4);
 (3) every first-order mutant on all runs of the valid base inputs.
 Resumable (JSONL appends, done keys skipped), parallel (2 workers), progress printed."""
@@ -58,6 +58,29 @@ def eval_family(fn, bid):
             # D-34: an exception while EVALUATING a completed run marks that step "not evaluable"
             # and counts as a failure/detection (favours the oracle-free tests).
             rec["evalerr"] = []
+            # D-36: float pre-check that the output stays within the slightly enlarged clip box
+            diag = ((bx[2] - bx[0]) ** 2 + (bx[3] - bx[1]) ** 2) ** 0.5; eps = 1e-9 * diag
+            def _inbox(c):
+                if c is None:
+                    return True
+                for v in c:
+                    x, y = float(v[0]), float(v[1])
+                    if not (bx[0] - eps <= x <= bx[2] + eps and bx[1] - eps <= y <= bx[3] + eps):
+                        return False
+                return True
+            try:
+                rec["outbox"] = not all(_inbox(c) for c in cells)
+            except BaseException:
+                rec["outbox"] = True
+            if rec["outbox"]:
+                rec.update({"missing": 0, "misassign": 0, "worst": float("inf"), "ref_fail": True,
+                            "def": {"P1": None, "P2": None, "P3": None, "flag": True}, "diff": float("inf")})
+                try:
+                    polys = _timed(to_polys, cells); cells_by[mr] = (polys, back, perm, P)
+                except BaseException:
+                    rec["evalerr"].append("to_polys")
+                out["runs"][mr] = rec
+                continue
             try:
                 polys = _timed(to_polys, cells)
             except BaseException:
