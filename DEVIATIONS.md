@@ -8,3 +8,6 @@ After D-34, the exact evaluation of outputs with extreme coordinates did not fin
 
 ## D-36 (2026-11-17, recorded before the rerun)
 Even with the 60 s limit of D-35, a mutant that returns extreme coordinates in almost every run takes hours, because its output vertices lie far outside the clip box. Fix: before evaluating a completed run, check in floating point that all output vertices are finite and lie within the clip box enlarged by 1e-9 of its diagonal. A run that fails this check is "outside the box" and, without exact evaluation, counts as failing the reference, flagged by the definition checks (a partition of the box cannot leave it, which is known without a reference) and differing from Shapely by more than τ. Metamorphic distances are computed as usual. This favours the oracle-free tests and works against P1 and P3. Decision rules are unchanged.
+
+## D-37 (2026-11-17, recorded before the rerun)
+Under SAP v4 a mutant with any non-silent run (exception, timeout, wrong length) is excluded from the denominators of P1–P5. The run of a mutant therefore stops at its first non-silent run (partial record). No decision is affected; the number of non-silent mutants is unchanged, and no descriptive breakdown of their detection is reported.

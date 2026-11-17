@@ -1,4 +1,4 @@
-"""Study 4 runner (SAP v4; evaluation exceptions and time limits handled as in deviations D-34 to D-36). Steps: (1) exact references and Shapely cells for all candidate inputs;
+"""Study 4 runner (SAP v4; evaluation exceptions and time limits handled as in deviations D-34 to D-36; early stop D-37). Steps: (1) exact references and Shapely cells for all candidate inputs;
 (2) the unmutated subject on all inputs, which selects the valid base inputs (rule in SAP v4);
 (3) every first-order mutant on all runs of the valid base inputs.
 Resumable (JSONL appends, done keys skipped), parallel (2 workers), progress printed."""
@@ -45,7 +45,11 @@ def load_ref(k):
     return d["ref"], [None if b is None else shapely.from_wkb(b) for b in d["shapely"]]
 
 
-def eval_family(fn, bid):
+class _NonSilent(Exception):
+    pass
+
+
+def eval_family(fn, bid, stop_nonsilent=False):
     """Run subject fn on the base input and its five follow-ups; return per-run and per-MR results."""
     out = {"runs": {}, "mr": {}}
     cells_by = {}
@@ -54,6 +58,9 @@ def eval_family(fn, bid):
         st, cells = run_subject(fn, P, bx)
         ref, sh = load_ref(key(bid, mr))
         rec = {"status": st}
+        if st != "OK" and stop_nonsilent:      # D-37: a non-silent mutant is excluded from P1-P5
+            out["runs"][mr] = rec
+            raise _NonSilent(out)
         if st == "OK":
             # D-34: an exception while EVALUATING a completed run marks that step "not evaluable"
             # and counts as a failure/detection (favours the oracle-free tests).
@@ -131,7 +138,14 @@ def mutant_task(args):
         exec(compile(src, "hp_mut", "exec"), mod.__dict__)
     except Exception as e:
         return {"mid": mid, "compile_error": type(e).__name__}
-    return {"mid": mid, "fam": {b: eval_family(mod.voronoi_cells, b) for b in bids}}
+    fam = {}
+    for b in bids:
+        try:
+            fam[b] = eval_family(mod.voronoi_cells, b, stop_nonsilent=True)
+        except _NonSilent as e:
+            fam[b] = e.args[0]
+            return {"mid": mid, "fam": fam, "stopped_early": True}
+    return {"mid": mid, "fam": fam}
 
 
 def valid(fam):
