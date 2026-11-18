@@ -1,0 +1,3491 @@
+{
+ "summary": {
+  "n_mutants": 202,
+  "classes": {
+   "compile_error": 0,
+   "nonsilent": 82,
+   "silent_killed": 106,
+   "not_killed": 14
+  },
+  "n_silent_killed": 106,
+  "P1": {
+   "k": 106,
+   "n": 106,
+   "recall": 1.0,
+   "upper": 1.0,
+   "supported": false
+  },
+  "P2": {
+   "def_only": 17,
+   "mr_only": 0,
+   "exact_mr_k": 89,
+   "p": 7.62939453125e-06,
+   "supported": true
+  },
+  "P3": {
+   "missed": 0,
+   "n": 106,
+   "rate": 0.0,
+   "lower": 0.0,
+   "supported": false
+  },
+  "P4": {
+   "k": 106,
+   "n": 106,
+   "recall": 1.0,
+   "lower": 0.9574852126495772,
+   "supported": true
+  },
+  "P5": {
+   "n_missed": 0,
+   "n_detected": 106,
+   "median_missed": null,
+   "median_detected": 0.9168224668304111,
+   "p": null,
+   "supported": false
+  },
+  "per_mr_recall": {
+   "MR-T": 69,
+   "MR-R": 57,
+   "MR-S": 34,
+   "MR-P": 48,
+   "MR-F": 52
+  }
+ },
+ "rows": [
+  {
+   "mid": "NEG:18:8:64:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "NEG:16:8:32:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.5120824665205365,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:14:13:32:1",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9965989124355351,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:14:13:32:0",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9243864585614849,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:14:13:32:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.41166041270189146,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:15:13:32:0",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9194691800349152,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:15:13:32:1",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.48482454937712677,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:16:11:18:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.15046296296296297,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:16:11:18:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.5120824665205365,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:16:11:18:2",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.5120824665205365,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:16:11:18:3",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.21405204298532515,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:16:11:18:4",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974806652594295,
+   "cell_error": true
+  },
+  {
+   "mid": "LCR:18:11:53:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.21405204298532515,
+   "cell_error": true
+  },
+  {
+   "mid": "NEG:32:12:24:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.9974806652594295,
+   "cell_error": true
+  },
+  {
+   "mid": "NEG:35:12:24:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.9974806652594295,
+   "cell_error": true
+  },
+  {
+   "mid": "NEG:41:12:21:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9168224668304111,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:15:13:32:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.48130680396548015,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:14:13:28:0",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9433757894033183,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:14:13:28:1",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9513119616951358,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:15:13:28:0",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.930028823138694,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:14:13:28:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9228159886136926,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:15:13:28:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9071610946516699,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:16:17:18:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974806652594295,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:16:17:18:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.21405204298532515,
+   "cell_error": true
+  },
+  {
+   "mid": "LCR:18:12:29:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "LCR:18:35:52:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:19:16:30:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:19:16:30:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:19:16:30:2",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:32:15:21:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9971458032617371,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:32:15:21:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9971458032617371,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:32:15:21:2",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9967586342675516,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:32:15:21:3",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9967586342675516,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:32:15:21:4",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.9974806652594295,
+   "cell_error": true
+  },
+  {
+   "mid": "LCR:35:15:36:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.2322530864197531,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:37:16:31:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9860263289601372,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:37:16:31:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9860263289601372,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:37:16:31:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9843773445765,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:38:16:31:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974806652594295,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:38:16:31:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974806652594295,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:38:16:31:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9786468562372665,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:39:16:53:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974806652594295,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:39:16:53:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974349954788133,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:39:16:53:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974806652594295,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:41:15:28:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.487302749388905,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:41:15:28:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9168224668304111,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:41:15:28:2",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9168224668304111,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:41:15:28:3",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.487302749388905,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:41:15:28:4",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9168224668304111,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:13:23:28:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.1863392612297445,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:13:23:28:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.21405204298532515,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:13:23:28:2",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:15:13:28:1",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9412107050183987,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:14:13:19:0",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9513118842193177,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:14:13:19:1",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.984824549377142,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:18:12:18:0",
+   "class": "not_killed",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 6.987212156620358e-10,
+   "cell_error": false
+  },
+  {
+   "mid": "ROR:18:12:18:1",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "ROR:18:12:18:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "ROR:18:12:18:3",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.21405204298532515,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:18:12:18:4",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "ROR:18:23:29:2",
+   "class": "not_killed",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 6.987212156620358e-10,
+   "cell_error": false
+  },
+  {
+   "mid": "ROR:18:23:29:3",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.21405204298532515,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:18:23:29:4",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:14:22:28:0",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.989571183660865,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:14:22:28:1",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.8493577988626334,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:14:22:28:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9288418278396262,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:15:13:19:0",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.26359547003167993,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:15:13:19:1",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.97414599295542,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:15:13:19:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9229466508368259,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:15:22:28:0",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9778377467005799,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:15:22:28:1",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.445276697946587,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:15:22:28:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.8984297699030117,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:18:23:29:0",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "ROR:18:23:29:1",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "ROR:18:35:41:0",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:14:13:19:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9396589127668952,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:18:35:41:2",
+   "class": "not_killed",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 6.987212156620358e-10,
+   "cell_error": false
+  },
+  {
+   "mid": "ROR:18:35:41:3",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.21405204298532451,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:18:35:41:4",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "ROR:18:35:41:1",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "ROR:18:46:52:1",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "ROR:18:46:52:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "ROR:18:46:52:0",
+   "class": "not_killed",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 6.987212156620358e-10,
+   "cell_error": false
+  },
+  {
+   "mid": "ROR:18:46:52:4",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:19:22:29:0",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "ROR:18:46:52:3",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.21405204298532451,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:19:22:29:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:19:22:29:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:35:15:23:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.09876543209876543,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:35:15:23:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.09876543209876543,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:35:15:23:2",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.10030864197530864,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:35:15:23:3",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.10030864197530864,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:35:15:23:4",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.17669753086419754,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:35:28:36:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.10030864197530864,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:35:28:36:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.10030864197530864,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:35:28:36:2",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.09876543209876543,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:35:28:36:3",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.09876543209876543,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:35:28:36:4",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.17669753086419754,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:37:16:19:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9870795372768251,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:37:16:19:2",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9860263289601372,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:37:16:19:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9860263289601372,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:37:23:30:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.2785989295589979,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:37:23:30:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9162926147043083,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:37:23:30:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9017650642294786,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:38:16:19:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9843274280933091,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:38:16:19:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.984396599662184,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:38:16:19:2",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.984396599662184,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:38:23:30:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.27859892955899784,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:38:23:30:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974349954788133,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:38:23:30:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974349954788133,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:39:16:43:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974349954788133,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:39:16:43:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974349954788106,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:39:16:43:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974806652594295,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:39:46:53:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974806652594295,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:39:46:53:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974349954788133,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:41:27:28:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.487302749388905,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:39:46:53:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974806652594295,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:41:27:28:2",
+   "class": "not_killed",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 6.987212156620358e-10,
+   "cell_error": false
+  },
+  {
+   "mid": "CRP:41:27:28:1",
+   "class": "not_killed",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 6.987212156620358e-10,
+   "cell_error": false
+  },
+  {
+   "mid": "ROR:43:29:43:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.21405204298532515,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:43:29:43:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.21405204298532515,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:43:29:43:3",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.21405204298532515,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:43:29:43:2",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.1385159105202186,
+   "cell_error": true
+  },
+  {
+   "mid": "ROR:43:29:43:4",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.1385159105202186,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:13:27:28:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.21405204298532515,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:18:17:18:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "CRP:18:17:18:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.21405204298532515,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:13:27:28:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.2140520429853245,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:18:28:29:1",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "CRP:18:40:41:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.21405204298532451,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:18:40:41:1",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "CRP:18:51:52:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "CRP:18:28:29:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.21405204298532515,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:18:51:52:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.21405204298532451,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:20:24:42:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:20:24:42:2",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:20:24:42:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:20:44:62:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:20:44:62:2",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:20:44:62:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:26:20:21:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.991384512933524,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:26:33:34:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "CRP:26:20:21:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.991384512933524,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:39:16:33:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.21405204298532515,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:26:33:34:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9860263289601372,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:39:16:33:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974349954788133,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:39:16:33:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.31352163090595864,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:39:36:43:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974806652594288,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:39:36:43:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974349954788133,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:39:36:43:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974806652594295,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:43:42:43:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.1385159105202186,
+   "cell_error": true
+  },
+  {
+   "mid": "CRP:43:42:43:1",
+   "class": "not_killed",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 6.987212156620358e-10,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:20:29:42:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "CRP:43:42:43:2",
+   "class": "not_killed",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 6.987212156620358e-10,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:20:29:42:2",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:20:49:62:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:20:29:42:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:20:49:62:2",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:39:16:23:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974806652594295,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:20:49:62:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:39:16:23:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.21405204298532515,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:39:16:23:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9527809797817266,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:39:26:33:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.21405204298532515,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:39:26:33:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9974806652594288,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:39:26:33:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": 0.9527809797817264,
+   "cell_error": true
+  },
+  {
+   "mid": "AOR:20:34:41:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:20:34:41:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": false,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:20:34:41:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:20:54:61:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:20:54:61:1",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:9:4:12:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:10:4:17:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "AOR:20:54:61:2",
+   "class": "nonsilent",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": true,
+    "MR-R": true,
+    "MR-S": true,
+    "MR-P": true,
+    "MR-F": true
+   },
+   "exact_mr": true,
+   "all_mr": true,
+   "worst": Infinity,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:25:4:24:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:26:4:54:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:27:4:14:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:28:4:54:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:12:8:24:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:13:8:34:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:14:8:32:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:15:8:32:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:11:4:64:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.21405204298532515,
+   "cell_error": true
+  },
+  {
+   "mid": "SDL:16:8:32:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.21405204298532515,
+   "cell_error": true
+  },
+  {
+   "mid": "SDL:29:8:23:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:30:8:55:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:18:8:64:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.21405204298532515,
+   "cell_error": true
+  },
+  {
+   "mid": "SDL:43:8:54:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:17:12:32:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.21405204298532515,
+   "cell_error": true
+  },
+  {
+   "mid": "SDL:19:12:30:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:20:12:64:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.21405204298532515,
+   "cell_error": true
+  },
+  {
+   "mid": "SDL:31:8:21:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.9974806652594295,
+   "cell_error": true
+  },
+  {
+   "mid": "SDL:34:12:27:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:32:12:24:0",
+   "class": "not_killed",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 6.987212156620358e-10,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:37:12:31:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:38:12:31:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:39:12:53:0",
+   "class": "nonsilent",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.0,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:35:12:24:0",
+   "class": "not_killed",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 6.987212156620358e-10,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:40:12:38:0",
+   "class": "silent_killed",
+   "def": true,
+   "diff": true,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 0.9974806652594295,
+   "cell_error": true
+  },
+  {
+   "mid": "SDL:41:12:21:0",
+   "class": "not_killed",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 6.987212156620358e-10,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:33:16:24:0",
+   "class": "not_killed",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 6.987212156620358e-10,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:36:16:24:0",
+   "class": "not_killed",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 6.987212156620358e-10,
+   "cell_error": false
+  },
+  {
+   "mid": "SDL:42:16:21:0",
+   "class": "not_killed",
+   "def": false,
+   "diff": false,
+   "mr": {
+    "MR-T": false,
+    "MR-R": false,
+    "MR-S": false,
+    "MR-P": false,
+    "MR-F": false
+   },
+   "exact_mr": false,
+   "all_mr": false,
+   "worst": 6.987212156620358e-10,
+   "cell_error": false
+  }
+ ]
+}

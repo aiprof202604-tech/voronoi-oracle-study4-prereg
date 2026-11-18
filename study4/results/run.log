@@ -1,0 +1,184 @@
+[ref] 288 inputs, 288 to do
+[ref] 24/288
+[ref] 48/288
+[ref] 72/288
+[ref] 96/288
+[ref] 120/288
+[ref] 144/288
+[ref] 168/288
+[ref] 192/288
+[ref] 216/288
+[ref] 240/288
+[ref] 264/288
+[ref] 288/288
+[orig] 48 tasks, 48 to do
+[orig] 2/48 (4%) 0s ETA 1s
+[orig] 4/48 (8%) 0s ETA 1s
+[orig] 6/48 (12%) 0s ETA 1s
+[orig] 8/48 (17%) 0s ETA 1s
+[orig] 10/48 (21%) 0s ETA 1s
+[orig] 12/48 (25%) 0s ETA 1s
+[orig] 14/48 (29%) 0s ETA 1s
+[orig] 16/48 (33%) 0s ETA 1s
+[orig] 18/48 (38%) 1s ETA 1s
+[orig] 20/48 (42%) 1s ETA 1s
+[orig] 22/48 (46%) 1s ETA 1s
+[orig] 24/48 (50%) 1s ETA 1s
+[orig] 26/48 (54%) 1s ETA 1s
+[orig] 28/48 (58%) 1s ETA 0s
+[orig] 30/48 (62%) 1s ETA 0s
+[orig] 32/48 (67%) 1s ETA 0s
+[orig] 34/48 (71%) 1s ETA 0s
+[orig] 36/48 (75%) 1s ETA 0s
+[orig] 38/48 (79%) 1s ETA 0s
+[orig] 40/48 (83%) 1s ETA 0s
+[orig] 42/48 (88%) 1s ETA 0s
+[orig] 44/48 (92%) 1s ETA 0s
+[orig] 46/48 (96%) 1s ETA 0s
+[orig] 48/48 (100%) 1s ETA 0s
+valid base inputs 31 of 48
+[mutants] 202 tasks, 202 to do
+[mutants] 10/202 (5%) 879s ETA 16867s
+[mutants] 20/202 (10%) 1884s ETA 17149s
+/usr/local/lib/python3.13/site-packages/shapely/constructive.py:245: RuntimeWarning: overflow encountered in buffer
+  return lib.buffer(
+/usr/local/lib/python3.13/site-packages/shapely/constructive.py:245: RuntimeWarning: invalid value encountered in buffer
+  return lib.buffer(
+/home/claude/sw/study4/code/s4_common.py:84: RuntimeWarning: overflow encountered in square
+  df = (Pf[:, 0] - fx) ** 2 + (Pf[:, 1] - fy) ** 2
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ~~~~^^^^^^^^^^^^^^^
+  File "/home/claude/sw/study4/code/run_study4.py", line 78, in mutant_task
+    return {"mid": mid, "fam": {b: eval_family(mod.voronoi_cells, b) for b in bids}}
+                                   ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/sw/study4/code/run_study4.py", line 50, in eval_family
+    rec["def"] = def_checks(P, polys, bx)
+                 ~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/claude/sw/study4/code/s4_common.py", line 85, in def_checks
+    for j in np.nonzero(df <= float(d0) * (1 + 1e-6) + 1e-300)[0]:
+                              ~~~~~^^^^
+  File "/usr/local/lib/python3.13/numbers.py", line 325, in __float__
+    return int(self.numerator) / int(self.denominator)
+           ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+OverflowError: integer division result too large for a float
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/claude/sw/study4/code/run_study4.py", line 126, in <module>
+    main()
+    ~~~~^^
+  File "/home/claude/sw/study4/code/run_study4.py", line 122, in main
+    stream([(m, s, vb) for m, s in M], mutant_task, os.path.join(RES, "mutants.jsonl"), "mutants", lambda r: r["mid"])
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/sw/study4/code/run_study4.py", line 96, in stream
+    for i, r in enumerate(pool.imap_unordered(func, todo), 1):
+                ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/multiprocessing/pool.py", line 873, in next
+    raise value
+OverflowError: integer division result too large for a float
+[ref] 288 inputs, 0 to do
+[orig] 48 tasks, 0 to do
+valid base inputs 31 of 48
+[mutants] 202 tasks, 176 to do
+/usr/local/lib/python3.13/site-packages/shapely/constructive.py:245: RuntimeWarning: overflow encountered in buffer
+  return lib.buffer(
+/usr/local/lib/python3.13/site-packages/shapely/constructive.py:245: RuntimeWarning: invalid value encountered in buffer
+  return lib.buffer(
+/home/claude/sw/study4/code/s4_common.py:84: RuntimeWarning: overflow encountered in square
+  df = (Pf[:, 0] - fx) ** 2 + (Pf[:, 1] - fy) ** 2
+/usr/local/lib/python3.13/site-packages/shapely/constructive.py:245: RuntimeWarning: divide by zero encountered in buffer
+  return lib.buffer(
+/usr/local/lib/python3.13/site-packages/shapely/creation.py:324: RuntimeWarning: invalid value encountered in linearrings
+  return lib.linearrings(coords, np.intc(handle_nan), out=out, **kwargs)
+[mutants] 8/176 (5%) 8s ETA 162s
+[mutants] 16/176 (9%) 15s ETA 155s
+[mutants] 24/176 (14%) 27s ETA 170s
+[ref] 288 inputs, 0 to do
+[orig] 48 tasks, 0 to do
+valid base inputs 31 of 48
+[mutants] 202 tasks, 147 to do
+[ref] 288 inputs, 0 to do
+[orig] 48 tasks, 0 to do
+valid base inputs 31 of 48
+[mutants] 202 tasks, 147 to do
+[mutants] 7/147 (5%) 448s ETA 8955s
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ~~~~^^^^^^^^^^^^^^^
+  File "/home/claude/sw/study4/code/run_study4.py", line 134, in mutant_task
+    return {"mid": mid, "fam": {b: eval_family(mod.voronoi_cells, b) for b in bids}}
+                                   ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/sw/study4/code/run_study4.py", line 55, in eval_family
+    ref, sh = load_ref(key(bid, mr))
+              ~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/claude/sw/study4/code/run_study4.py", line 44, in load_ref
+    d = pickle.load(open(os.path.join(REFD, k.replace("|", "__") + ".pkl"), "rb"))
+  File "/usr/local/lib/python3.13/fractions.py", line 963, in __hash__
+    return _hash_algorithm(self._numerator, self._denominator)
+  File "/usr/local/lib/python3.13/fractions.py", line 33, in _hash_algorithm
+    dinv = pow(denominator, -1, _PyHASH_MODULUS)
+  File "/home/claude/sw/study4/code/s4_common.py", line 101, in _alarm
+    raise _TO()
+s4_common._TO
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/claude/sw/study4/code/run_study4.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "/home/claude/sw/study4/code/run_study4.py", line 178, in main
+    stream([(m, s, vb) for m, s in M], mutant_task, os.path.join(RES, "mutants.jsonl"), "mutants", lambda r: r["mid"])
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/sw/study4/code/run_study4.py", line 152, in stream
+    for i, r in enumerate(pool.imap_unordered(func, todo), 1):
+                ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/multiprocessing/pool.py", line 873, in next
+    raise value
+s4_common._TO
+[ref] 288 inputs, 0 to do
+[orig] 48 tasks, 0 to do
+valid base inputs 31 of 48
+[mutants] 202 tasks, 139 to do
+[mutants] 6/139 (4%) 41s ETA 901s
+[mutants] 12/139 (9%) 77s ETA 818s
+[mutants] 18/139 (13%) 84s ETA 561s
+[mutants] 24/139 (17%) 84s ETA 402s
+/usr/local/lib/python3.13/site-packages/shapely/constructive.py:245: RuntimeWarning: overflow encountered in buffer
+  return lib.buffer(
+/usr/local/lib/python3.13/site-packages/shapely/constructive.py:245: RuntimeWarning: invalid value encountered in buffer
+  return lib.buffer(
+[mutants] 30/139 (22%) 88s ETA 321s
+[mutants] 36/139 (26%) 92s ETA 264s
+[mutants] 42/139 (30%) 95s ETA 219s
+[mutants] 48/139 (35%) 97s ETA 183s
+[mutants] 54/139 (39%) 100s ETA 157s
+[mutants] 60/139 (43%) 103s ETA 135s
+[mutants] 66/139 (47%) 105s ETA 116s
+[mutants] 72/139 (52%) 106s ETA 99s
+/usr/local/lib/python3.13/site-packages/shapely/creation.py:324: RuntimeWarning: invalid value encountered in linearrings
+  return lib.linearrings(coords, np.intc(handle_nan), out=out, **kwargs)
+/usr/local/lib/python3.13/site-packages/shapely/constructive.py:245: RuntimeWarning: divide by zero encountered in buffer
+  return lib.buffer(
+[mutants] 78/139 (56%) 108s ETA 84s
+[mutants] 84/139 (60%) 109s ETA 71s
+[mutants] 90/139 (65%) 113s ETA 61s
+[mutants] 96/139 (69%) 114s ETA 51s
+[mutants] 102/139 (73%) 116s ETA 42s
+[mutants] 108/139 (78%) 116s ETA 33s
+[mutants] 114/139 (82%) 117s ETA 26s
+[mutants] 120/139 (86%) 117s ETA 19s
+[mutants] 126/139 (91%) 117s ETA 12s
+[mutants] 132/139 (95%) 119s ETA 6s
+[mutants] 138/139 (99%) 122s ETA 1s
+[mutants] 139/139 (100%) 123s ETA 0s

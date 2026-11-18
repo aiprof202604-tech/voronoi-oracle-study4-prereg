@@ -1,0 +1,14 @@
+{
+ "mutants": 202,
+ "valid_bases": 31,
+ "stopped_early": 57,
+ "outbox_runs": 2715,
+ "outbox_mutants": 26,
+ "outbox_srk": 13,
+ "evalerr_runs": 187,
+ "srk": 106,
+ "def_genuine": 96,
+ "def_genuine_upper99": 0.9601036302672106,
+ "srk_min_worst": 0.09876543209876543,
+ "srk_median_worst": 0.9168224668304111
+}
